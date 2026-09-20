@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PrevPlan | Gestão de planos</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div><span class="eyebrow">GESTÃO PREVIDENCIÁRIA</span><h1>Prev<b>Plan</b></h1><p>Gestão de planos previdenciários</p></div><span class="status">● API online</span></header>
+  <main>
+    <section class="cards">
+      <article><small>Planos cadastrados</small><strong id="total">0</strong></article>
+      <article><small>Planos ativos</small><strong id="ativos">0</strong></article>
+      <article><small>Contribuição média</small><strong id="media">R$ 0,00</strong></article>
+    </section>
+    <section class="panel">
+      <div class="panel-title"><div><h2>Catálogo de planos</h2><p>Consulte e gerencie os planos cadastrados</p></div><button id="novo">+ Novo plano</button></div>
+      <div id="mensagem"></div>
+      <div class="table-wrap"><table><thead><tr><th>Plano</th><th>Descrição</th><th>Contribuição</th><th>Status</th><th>Ações</th></tr></thead><tbody id="lista"></tbody></table></div>
+    </section>
+  </main>
+  <dialog id="modal"><form id="form"><div class="modal-title"><h2 id="tituloModal">Novo plano</h2><button type="button" id="fechar">×</button></div><input type="hidden" id="id"><label>Nome<input id="nome" maxlength="80" required></label><label>Descrição<textarea id="descricao" maxlength="240" required></textarea></label><label>Contribuição mensal<input id="contribuicao" type="number" min="0.01" step="0.01" required></label><label class="check"><input id="ativo" type="checkbox" checked> Plano ativo</label><button class="salvar" type="submit">Salvar plano</button></form></dialog>
+  <footer>PrevPlan — Gestão de planos previdenciários</footer>
+  <script src="/app.js"></script>
+</body></html>

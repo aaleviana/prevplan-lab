@@ -1,19 +1,11 @@
-# Java 
-*.class
-target/ 
+target/
 out/
-
-# VS Code 
+*.class
 .vscode/
-
-#IntelliJ
 .idea/
 *.iml
-
-#Sistema operacional
-.DS_Store
-Thumbs.db
-
-#Configuraçoes locais e segredos 
 .env
 application-local.properties
+*.log
+.DS_Store
+Thumbs.db
